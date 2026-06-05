@@ -18,8 +18,8 @@ int	memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*b;
 	size_t			i;
 
-	a = s1;
-	b = s2;
+	a = (unsigned char *) s1;
+	b = (unsigned char *) s2;
 	i = 0;
 	while (i < n && a[i] == b[i])
 		i++;
