@@ -45,7 +45,10 @@ SRCS = 	src/basic/ft_atoi.c \
 		src/basic/ft_strrchr.c \
 		src/basic/ft_strdup.c \
 		src/basic/ft_toupper.c \
-		src/basic/ft_tolower.c 
+		src/basic/ft_tolower.c \
+		src/additional/ft_putchar_fd.c \
+		src/additional/ft_putendl_fd.c \
+		src/additional/ft_putstr_fd.c
 
 
 # Arquivos objeto gerados na compilação
