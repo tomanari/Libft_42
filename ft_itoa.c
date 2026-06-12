@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/11 17:00:42 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/11 19:18:21 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/06/11 17:41:06 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/06/11 19:18:43 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int main (void)
+char *ft_itoa(int n)
 {
-	int i = 1;
+	int	len;
+	//int	count;
 
-	printf("%d", ft_itoa(i));
+	len = 0;
+	while (n > 9)
+	{
+		n = n / 10;
+		len++;
+	}
+	if (n <= 9)
+		len++;
+	return (len);	
 }

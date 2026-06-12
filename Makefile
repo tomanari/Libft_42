@@ -23,34 +23,36 @@ NAME = libft.a
 HEADER = libft.h
 
 # Arquivos fonte
-SRCS = 	src/basic/ft_atoi.c \
-				src/basic/ft_bzero.c \
-				src/basic/ft_calloc.c \
-				src/basic/ft_isalnum.c \
-				src/basic/ft_isalpha.c \
-				src/basic/ft_isascii.c \
-				src/basic/ft_isdigit.c \
-				src/basic/ft_isprint.c \
-				src/basic/ft_memcpy.c \
-				src/basic/ft_memmove.c \
-				src/basic/ft_memset.c \
-				src/basic/ft_memchr.c \
-				src/basic/ft_memcmp.c \
-				src/basic/ft_strchr.c \
-				src/basic/ft_strlcat.c \
-				src/basic/ft_strlcpy.c \
-				src/basic/ft_strlen.c \
-				src/basic/ft_strncmp.c \
-				src/basic/ft_strnstr.c \
-				src/basic/ft_strrchr.c \
-				src/basic/ft_strdup.c \
-				src/basic/ft_toupper.c \
-				src/basic/ft_tolower.c \
-				src/additional/ft_putchar_fd.c \
-				src/additional/ft_putendl_fd.c \
-				src/additional/ft_putstr_fd.c \
-				src/additional/ft_putnbr_fd.c \
-				src/additional/ft_substr.c
+SRCS = 	ft_atoi.c \
+		ft_bzero.c \
+		ft_calloc.c \
+		ft_isalnum.c \
+		ft_isalpha.c \
+		ft_isascii.c \
+		ft_isdigit.c \
+		ft_isprint.c \
+		ft_memcpy.c \
+		ft_memmove.c \
+		ft_memset.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_strchr.c \
+		ft_strlcat.c \
+		ft_strlcpy.c \
+		ft_strlen.c \
+		ft_strncmp.c \
+		ft_strnstr.c \
+		ft_strrchr.c \
+		ft_strdup.c \
+		ft_toupper.c \
+		ft_tolower.c \
+		ft_putchar_fd.c \
+		ft_putendl_fd.c \
+		ft_putstr_fd.c \
+		ft_putnbr_fd.c \
+		ft_substr.c \
+		ft_strjoin.c \
+		ft_itoa.c
 
 
 # Arquivos objeto gerados na compilação

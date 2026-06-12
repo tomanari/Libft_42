@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/11 17:00:42 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/11 19:18:21 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/06/09 14:16:55 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/06/11 15:07:02 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int main (void)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int i = 1;
+	char	*dest;
+	size_t	s_len;
+	size_t	i;
 
-	printf("%d", ft_itoa(i));
+	i = 0;
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	dest = malloc(len + 1);
+	if (!dest)
+		return (NULL);
+	while (s[i] && i < len && start + i < s_len)
+	{
+		dest[i] = s[start + i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
