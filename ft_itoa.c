@@ -6,24 +6,57 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 17:41:06 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/11 19:18:43 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/12 21:10:51 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+static int int_len(int x)
 {
-	int	len;
-	//int	count;
+	int 		len;
+	long int	nb;
 
 	len = 0;
-	while (n > 9)
+	nb = x;
+	if (nb < 0)
 	{
-		n = n / 10;
+		nb *= -1;
 		len++;
 	}
-	if (n <= 9)
-		len++;
-	return (len);	
+    while (nb > 9)
+    {
+        nb = nb / 10;
+        len++;
+    }
+    if (nb <= 9)
+        len++;
+	return (len);
 }
+char *ft_itoa(int n)
+{
+    int		len;
+    char	*dest;
+	int		index;
+	long int	x;
+
+	x = n;
+	len = int_len(n);
+    dest = malloc(len + 1);
+	index = len - 1;
+	if (x < 0)
+	{
+		dest[0] = '-';
+		x *= -1;
+	}
+	while (x > 9)
+    {
+        dest[index] = (x % 10) + '0';
+        x /= 10;
+		index--;
+    }
+    if (x <= 9)
+        dest[index] = x + '0';
+    dest[len] = '\0';
+    return (dest);
+}	

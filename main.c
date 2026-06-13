@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 17:00:42 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/11 19:18:21 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/12 21:07:02 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main (void)
 {
-	int i = 1;
+	int i = -2147483648;
 
-	printf("%d", ft_itoa(i));
+	printf("%s\n", ft_itoa(i));
 }
