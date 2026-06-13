@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static int int_len(int x)
+static int	int_len(int x)
 {
-	int 		len;
+	int				len;
 	long int	nb;
 
 	len = 0;
@@ -24,39 +24,40 @@ static int int_len(int x)
 		nb *= -1;
 		len++;
 	}
-    while (nb > 9)
-    {
-        nb = nb / 10;
-        len++;
-    }
-    if (nb <= 9)
-        len++;
+	while (nb > 9)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	if (nb <= 9)
+		len++;
 	return (len);
 }
-char *ft_itoa(int n)
-{
-    int		len;
-    char	*dest;
-	int		index;
-	long int	x;
 
-	x = n;
+char	*ft_itoa(int n)
+{
+	int				len;
+	char			*dest;
+	int				index;
+	long int	value;
+
+	value = n;
 	len = int_len(n);
-    dest = malloc(len + 1);
+	dest = malloc(len + 1);
 	index = len - 1;
-	if (x < 0)
+	if (value < 0)
 	{
 		dest[0] = '-';
-		x *= -1;
+		value *= -1;
 	}
-	while (x > 9)
-    {
-        dest[index] = (x % 10) + '0';
-        x /= 10;
+	while (value > 9)
+	{
+		dest[index] = (value % 10) + '0';
+		value /= 10;
 		index--;
-    }
-    if (x <= 9)
-        dest[index] = x + '0';
-    dest[len] = '\0';
-    return (dest);
-}	
+	}
+	if (value <= 9)
+		dest[index] = value + '0';
+	dest[len] = '\0';
+	return (dest);
+}
