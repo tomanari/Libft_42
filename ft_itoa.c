@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 17:41:06 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/12 21:10:51 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/16 14:16:14 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	int_len(int x)
 {
-	int				len;
+	int			len;
 	long int	nb;
 
 	len = 0;
@@ -36,9 +36,9 @@ static int	int_len(int x)
 
 char	*ft_itoa(int n)
 {
-	int				len;
-	char			*dest;
-	int				index;
+	int			len;
+	char		*dest;
+	int			index;
 	long int	value;
 
 	value = n;

@@ -1,34 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/16 14:16:52 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/16 18:07:38 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/06/16 18:54:29 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/06/16 18:56:12 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char **ft_split(char const *s, char c)
 {
-	size_t	i;
-	char	*dest;
-
-	i = 0;
-	while (s[i])
-		i++;
-	dest = malloc(i + 1);
-	if (!dest)
-		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		dest[i] = (char)(*f)(i, s[i]);
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	
 }
