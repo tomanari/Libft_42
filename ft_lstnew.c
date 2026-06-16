@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 19:00:51 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/16 20:39:31 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/16 20:51:56 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,7 @@
 
 t_list *ft_lstnew(void *content)
 {
-	
+	t_list	*new;
+
+	new = malloc (sizeof content);
 }

@@ -55,7 +55,8 @@ SRCS = 	ft_atoi.c \
 		ft_itoa.c \
 		ft_strmapi.c \
 		ft_striteri.c \
-		ft_strtrim.c
+		ft_strtrim.c \
+		ft_lstnew.c
 
 
 # Arquivos objeto gerados na compilação
