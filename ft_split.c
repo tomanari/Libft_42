@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 18:54:29 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/16 18:56:12 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/18 15:00:32 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ static int	count_w(const char *src, char c)
 {
 	unsigned int	i;
 
-	while(*src)
+	i = 0;
+	while (*src)
 	{
 		if (*src == c)
 			src++;

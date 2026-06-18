@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 14:16:55 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/06/16 18:06:38 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/06/18 17:11:16 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest = malloc(len + 1);
 	if (!dest)
 		return (NULL);
-	while (s[i] && i < len && start + i < s_len)
+	while (s[i] && i < len && (start + i) < s_len)
 	{
 		dest[i] = s[start + i];
 		i++;
