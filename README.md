@@ -1,4 +1,4 @@
-*Este projeto foi criado como parte do currículo da 42 por Mtomanar*
+*Este projeto foi criado como parte do currículo da 42 por <mtomanar>*
 
 # Libft
 
@@ -262,6 +262,6 @@ Este projeto fortaleceu meu entendimento sobre:
 
 ## Autor
 
-42 Login: Mtomanar
+42 Login: mtomanar
 
 GitHub: https://github.com/tomanari

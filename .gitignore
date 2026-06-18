@@ -1,0 +1,12 @@
+# Compilação
+*.o
+*.a
+
+# Executáveis de teste
+a.out
+
+# IDEs
+.vscode/
+
+# Arquivos de teste locais
+main.c
